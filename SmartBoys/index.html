@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            font-size: 1.2em;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>"Raqamni top" o'yini</h1>
+    <p>Men 1 dan 100 gacha bo'lgan raqamni o'yladim.</p>
+    <input type="number" id="guess" min="1" max="100" placeholder="Tahmin">
+    <button onclick="checkGuess()">Tekshirish</button>
+    <p id="message"></p>
+    <button onclick="resetGame()">Qaytadan o'ynash</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
